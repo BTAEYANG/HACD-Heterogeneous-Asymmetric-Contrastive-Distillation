@@ -8,7 +8,7 @@
 
 Official PyTorch implementation of **HACD (Heterogeneous Asymmetric Contrastive Distillation)**, a logit-only knowledge distillation method for CNN, Transformer, and MLP teacher–student pairs.
 
-> **Status.** Pretrained checkpoints and evaluation scripts are coming soon. The full training code will be released upon publication.
+> **Status.** CIFAR-100 checkpoints are available in the [Model Zoo](#model-zoo). ImageNet-1K checkpoints and evaluation scripts are coming soon. The full training code will be released upon publication.
 
 <p align="center">
   <img src="assets/hacd_overview.png" width="95%" alt="HACD overview">
@@ -16,6 +16,7 @@ Official PyTorch implementation of **HACD (Heterogeneous Asymmetric Contrastive 
 
 ## News
 
+- **[2026-11]** CIFAR-100 checkpoints for all 12 pairs released ([release](https://github.com/BTAEYANG/HACD-Heterogeneous-Asymmetric-Contrastive-Distillation/releases/tag/cifar-100-checkpoints)).
 - **[2026-11]** Paper submitted; preprint on [arXiv](https://arxiv.org/abs/XXXX.XXXXX).
 
 ## Overview
@@ -135,19 +136,39 @@ Top-1 accuracy (%) on heterogeneous teacher–student pairs. HACD achieves the b
 
 ## Model Zoo
 
-| Dataset | Teacher → Student | Top-1 | Checkpoint | Log |
-|:--|:--|:-:|:-:|:-:|
-| CIFAR-100 | 12 pairs | see [Main Results](#cifar-100-12-pairs-label-free-distillation) | Coming soon | Coming soon |
-| ImageNet-1K | 15 pairs | see [Main Results](#imagenet-1k-15-pairs) | Coming soon | Coming soon |
+Distilled student checkpoints are hosted on [GitHub Releases](https://github.com/BTAEYANG/HACD-Heterogeneous-Asymmetric-Contrastive-Distillation/releases).
+
+### CIFAR-100 ([release](https://github.com/BTAEYANG/HACD-Heterogeneous-Asymmetric-Contrastive-Distillation/releases/tag/cifar-100-checkpoints))
+
+| Teacher → Student | Top-1 (%) | Size | Checkpoint |
+|:--|:-:|:-:|:-:|
+| Swin-T → ResNet-18 | 85.00 | 85.8 MB | [download](https://github.com/BTAEYANG/HACD-Heterogeneous-Asymmetric-Contrastive-Distillation/releases/download/cifar-100-checkpoints/cifar100-hacd-swin_t-resnet18.pth.tar) |
+| ViT-S → ResNet-18 | 84.76 | 85.8 MB | [download](https://github.com/BTAEYANG/HACD-Heterogeneous-Asymmetric-Contrastive-Distillation/releases/download/cifar-100-checkpoints/cifar100-hacd-vit_s-resnet18.pth.tar) |
+| Mixer-B/16 → ResNet-18 | 83.95 | 85.8 MB | [download](https://github.com/BTAEYANG/HACD-Heterogeneous-Asymmetric-Contrastive-Distillation/releases/download/cifar-100-checkpoints/cifar100-hacd-mixer_b16-resnet18.pth.tar) |
+| Swin-T → MobileNetV2 | 85.38 | 18.2 MB | [download](https://github.com/BTAEYANG/HACD-Heterogeneous-Asymmetric-Contrastive-Distillation/releases/download/cifar-100-checkpoints/cifar100-hacd-swin_t-mobilenetv2.pth.tar) |
+| ViT-S → MobileNetV2 | 84.66 | 18.2 MB | [download](https://github.com/BTAEYANG/HACD-Heterogeneous-Asymmetric-Contrastive-Distillation/releases/download/cifar-100-checkpoints/cifar100-hacd-vit_s-mobilenetv2.pth.tar) |
+| Mixer-B/16 → MobileNetV2 | 84.20 | 18.2 MB | [download](https://github.com/BTAEYANG/HACD-Heterogeneous-Asymmetric-Contrastive-Distillation/releases/download/cifar-100-checkpoints/cifar100-hacd-mixer_b16-mobilenetv2.pth.tar) |
+| ConvNeXt-T → DeiT-T | 82.50 | 63.6 MB | [download](https://github.com/BTAEYANG/HACD-Heterogeneous-Asymmetric-Contrastive-Distillation/releases/download/cifar-100-checkpoints/cifar100-hacd-convnext_t-deit_t.pth.tar) |
+| Mixer-B/16 → DeiT-T | 81.46 | 63.6 MB | [download](https://github.com/BTAEYANG/HACD-Heterogeneous-Asymmetric-Contrastive-Distillation/releases/download/cifar-100-checkpoints/cifar100-hacd-mixer_b16-deit_t.pth.tar) |
+| ConvNeXt-T → Swin-P | 82.46 | 60.1 MB | [download](https://github.com/BTAEYANG/HACD-Heterogeneous-Asymmetric-Contrastive-Distillation/releases/download/cifar-100-checkpoints/cifar100-hacd-convnext_t-swin_p.pth.tar) |
+| Mixer-B/16 → Swin-P | 82.84 | 60.1 MB | [download](https://github.com/BTAEYANG/HACD-Heterogeneous-Asymmetric-Contrastive-Distillation/releases/download/cifar-100-checkpoints/cifar100-hacd-mixer_b16-swin_p.pth.tar) |
+| ConvNeXt-T → ResMLP-S12 | 81.84 | 172 MB | [download](https://github.com/BTAEYANG/HACD-Heterogeneous-Asymmetric-Contrastive-Distillation/releases/download/cifar-100-checkpoints/cifar100-hacd-convnext_t-resmlp_s12.pth.tar) |
+| Swin-T → ResMLP-S12 | 82.23 | 172 MB | [download](https://github.com/BTAEYANG/HACD-Heterogeneous-Asymmetric-Contrastive-Distillation/releases/download/cifar-100-checkpoints/cifar100-hacd-swin_t-resmlp_s12.pth.tar) |
+
+### ImageNet-1K
+
+Checkpoints for the 15 ImageNet-1K pairs: coming soon.
 
 ## Getting Started
 
-- **Evaluation:** Coming soon, together with the checkpoints.
+- **Evaluation:** Coming soon.
 - **Training:** Coming soon. The training code will be released upon publication.
 
 ## Roadmap
 
-- [ ] Distilled student checkpoints and training logs
+- [x] CIFAR-100 student checkpoints (12 pairs)
+- [ ] ImageNet-1K student checkpoints (15 pairs)
+- [ ] Training logs
 - [ ] Evaluation scripts
 - [ ] Training code and configurations for all 27 pairs (upon publication)
 
