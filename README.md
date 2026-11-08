@@ -10,9 +10,9 @@ Official PyTorch implementation of **HACD (Heterogeneous Asymmetric Contrastive 
 
 > **Status.** CIFAR-100 checkpoints are available in the [Model Zoo](#model-zoo). ImageNet-1K checkpoints and evaluation scripts are coming soon. The full training code will be released upon publication.
 
-<p align="center">
+<!-- <p align="center">
   <img src="assets/hacd_overview.png" width="95%" alt="HACD overview">
-</p>
+</p> -->
 
 ## News
 
