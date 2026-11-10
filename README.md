@@ -1,7 +1,7 @@
 # HACD: Heterogeneous Asymmetric Contrastive Distillation
 
 <p align="center">
-  <a href="https://arxiv.org/abs/XXXX.XXXXX"><img src="https://img.shields.io/badge/arXiv-XXXX.XXXXX-b31b1b.svg" alt="arXiv"></a>
+  <a href="http://arxiv.org/abs/2611.10672"><img src="https://img.shields.io/badge/arXiv-XXXX.XXXXX-b31b1b.svg" alt="arXiv"></a>
   <img src="https://img.shields.io/badge/PyTorch-%E2%89%A52.0-ee4c2c.svg" alt="PyTorch">
   <img src="https://img.shields.io/badge/checkpoints-CC%20BY--NC%204.0-lightgrey.svg" alt="License">
 </p>
@@ -17,7 +17,7 @@ Official PyTorch implementation of **HACD (Heterogeneous Asymmetric Contrastive 
 ## News
 
 - **[2026-11]** CIFAR-100 checkpoints for all 12 pairs released ([release](https://github.com/BTAEYANG/HACD-Heterogeneous-Asymmetric-Contrastive-Distillation/releases/tag/cifar-100-checkpoints)).
-- **[2026-11]** Paper submitted; preprint on [arXiv](https://arxiv.org/abs/XXXX.XXXXX).
+- **[2026-11]** Paper submitted; preprint on [arXiv](http://arxiv.org/abs/2611.10672).
 
 ## Overview
 
