@@ -1,7 +1,7 @@
 # HACD: Heterogeneous Asymmetric Contrastive Distillation
 
 <p align="center">
-  <a href="http://arxiv.org/abs/2611.10672"><img src="https://img.shields.io/badge/arXiv-XXXX.XXXXX-b31b1b.svg" alt="arXiv"></a>
+  <a href="http://arxiv.org/abs/2611.10672"><img src="https://img.shields.io/badge/arXiv-2611.10672-b31b1b.svg" alt="arXiv"></a>
   <img src="https://img.shields.io/badge/PyTorch-%E2%89%A52.0-ee4c2c.svg" alt="PyTorch">
   <img src="https://img.shields.io/badge/checkpoints-CC%20BY--NC%204.0-lightgrey.svg" alt="License">
 </p>
